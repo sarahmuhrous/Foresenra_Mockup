@@ -1654,7 +1654,7 @@ except Exception as e:
 
 # في الخطوة التالية، سنقوم بتحليل الجداول المستخلصة وتحديد جدول بيانات قنا.
 
-!wget https://hub.worldpop.org/geodata/10.5258/SOTON/WP00803/egy_ppp_2025.tif
+os.system("wget https://hub.worldpop.org/geodata/10.5258/SOTON/WP00803/egy_ppp_2025.tif")
 
 import geopandas as gpd
 import rasterio
