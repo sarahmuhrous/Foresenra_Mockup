@@ -1,14 +1,16 @@
-boto3==1.40.50
-botocore==1.40.50
-s3fs==2025.9.0
-geopandas
 streamlit
 streamlit-folium
 folium
-h3
-rasterio
+pandas
+geopandas
 numpy
 shapely
 fiona
 pyproj
+rtree
+h3
+rasterio
+boto3==1.40.50
+botocore==1.40.50
+s3fs==2025.9.0
 
