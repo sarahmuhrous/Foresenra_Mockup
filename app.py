@@ -7,11 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1fiDL0OOzxevY5Y3yNszUU746CTE-493o
 """
 
-import os
+#import os
 
-os.system("pip install boto3")
+#os.system("pip install boto3")
 
-os.system("pip install s3fs")
+#os.system("pip install s3fs")
 
 import pandas as pd
 import s3fs
@@ -57,13 +57,13 @@ print(fs.ls('ookla-open-data/shapefiles/performance/type=mobile/year=2025/quarte
 
 
 
-os.system("pip install fiona")
+#os.system("pip install fiona")
 
-os.system("pip install --upgrade fiona geopandas pyogrio")
+#os.system("pip install --upgrade fiona geopandas pyogrio")
 
-os.system("apt-get install -y gdal-bin")
+#os.system("apt-get install -y gdal-bin")
 
-os.system('ogr2ogr -f "ESRI Shapefile" /content/ne_110m_admin_0_countries.cpg/content/ne_110m_admin_0_countries.dbf/content/ne_110m_admin_0_countries.prj/content/ne_110m_admin_0_countries.shp/content/ne_110m_admin_0_countries.shx')
+#os.system('ogr2ogr -f "ESRI Shapefile" /content/ne_110m_admin_0_countries.cpg/content/ne_110m_admin_0_countries.dbf/content/ne_110m_admin_0_countries.prj/content/ne_110m_admin_0_countries.shp/content/ne_110m_admin_0_countries.shx')
 
 world = gpd.read_file("/content/ne_110m_admin_0_countries.shp")
 egypt = world[world["NAME"].str.contains("Egypt", case=False)]
@@ -145,7 +145,7 @@ print(Qina)
 
 print(df.columns)
 
-os.system("pip install mercantile")
+#os.system("pip install mercantile")
 
 print(df["tile"].head())
 print(df["tile_x"].head())
@@ -267,9 +267,9 @@ print("عدد خلايا قنا:", len(gdf_qena_speed))
 print("عدد خلايا فيها سرعات:", len(speed_hexes))
 print("عدد خلايا dead zones:", len(dead_hexes))
 
-os.system("pip install h3")
+#os.system("pip install h3")
 
-os.system("pip install rasterio")
+#os.system("pip install rasterio")
 
 import folium
 from folium.plugins import HeatMap
@@ -404,7 +404,7 @@ kpis = {
 
 print(kpis)
 
-os.system("pip install streamlit streamlit-folium folium pyngrok")
+#os.system("pip install streamlit streamlit-folium folium pyngrok")
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
@@ -622,9 +622,9 @@ os.system("pip install streamlit streamlit-folium folium pyngrok")
 # folium_static(m)
 #
 
-import os
+#import os
 
-os.system("ngrok authtoken 33ptHpCNcjxpzgUriZemxYK2VUU_2XvVP1dH4xyLgNeP69stV")
+#os.system("ngrok authtoken 33ptHpCNcjxpzgUriZemxYK2VUU_2XvVP1dH4xyLgNeP69stV")
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
@@ -991,7 +991,7 @@ os.system("ngrok authtoken 33ptHpCNcjxpzgUriZemxYK2VUU_2XvVP1dH4xyLgNeP69stV")
 from pyngrok import ngrok
 
 # Set the ngrok authtoken (replace with your actual authtoken)
-os.system("ngrok authtoken 33ptHpCNcjxpzgUriZemxYK2VUU_2XvVP1dH4xyLgNeP69stV")
+#os.system("ngrok authtoken 33ptHpCNcjxpzgUriZemxYK2VUU_2XvVP1dH4xyLgNeP69stV")
 
 public_url = ngrok.connect(8501)
 print("افتحي التطبيق من هنا:", public_url)
@@ -1000,7 +1000,7 @@ print(gdf_qena_speed.columns)
 
 
 
-os.system("streamlit run app.py --server.port 8501")
+#os.system("streamlit run app.py --server.port 8501")
 
 
 
@@ -1269,7 +1269,7 @@ print("عدد خلايا فيها سرعات:", len(speed_hexes))
 
 print("عدد خلايا dead zones:", len(dead_hexes))
 
-os.system("pip install rasterio")
+#os.system("pip install rasterio")
 
 import h3
 import geopandas as gpd
@@ -1629,7 +1629,7 @@ else:
 
 """**ملاحظة هامة:** استخلاص البيانات من ملفات PDF قد يكون صعبًا ويعتمد على هيكل الملف وتنسيق الجداول فيه. قد تحتاج هذه الخطوة إلى تعديلات بناءً على بنية ملف الـ PDF الخاص بك."""
 
-os.system("pip install tabula-py --quiet")
+#os.system("pip install tabula-py --quiet")
 
 import tabula
 
