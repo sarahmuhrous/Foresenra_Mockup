@@ -1,0 +1,12 @@
+geopandas
+shapely
+h3
+matplotlib
+numpy
+pandas
+rasterio
+tabula-py
+PyPDF2
+folium
+streamlit
+requests
