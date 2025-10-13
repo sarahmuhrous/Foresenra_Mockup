@@ -10,3 +10,4 @@ PyPDF2
 folium
 streamlit
 requests
+s3fs
