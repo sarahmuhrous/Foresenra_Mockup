@@ -11,3 +11,5 @@ folium
 streamlit
 requests
 s3fs
+botocore>=1.40.50,<1.41.0
+boto3>=1.40.50
