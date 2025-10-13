@@ -63,7 +63,7 @@ os.system("pip install --upgrade fiona geopandas pyogrio")
 
 os.system("apt-get install -y gdal-bin")
 
-os.system("ogr2ogr -f "ESRI Shapefile" /content/ne_110m_admin_0_countries.cpg/content/ne_110m_admin_0_countries.dbf/content/ne_110m_admin_0_countries.prj/content/ne_110m_admin_0_countries.shp/content/ne_110m_admin_0_countries.shx")
+os.system("ogr2ogr -f "ESRI Shapefile" /content/ne_110m_admin_0_countries.cpg/content/ne_110m_admin_0_countries.dbf/content/ne_110m_admin_0_countries.prj/content/ne_110m_admin_0_countries.shp/content/ne_110m_admin_0_countries.shx"")
 
 world = gpd.read_file("/content/ne_110m_admin_0_countries.shp")
 egypt = world[world["NAME"].str.contains("Egypt", case=False)]
